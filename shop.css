@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #cf4520;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #fff !important;
+  color: #000;
+}
+
+.fa {
+  font-family: "FontAwesome" !important;
+}
+
+/* NAVBAR START */
+/* ======================================================================== */
+
+.navbar {
+  background-color: #e5ded4;
+}
+
+.btn-primary {
+  background-color: #cf4520;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.nav-item {
+  color: #000 !important;
+  font-weight: 600 !important;
+}
+
+.nav-item:hover {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+#nav-space {
+  width: 40vw;
+  height: 50px;
+}
+
+/* NAVBAR END */
+
+/* PRODUCT SECTION START */
+/* ///////////////////////////////////////////////////////////////////////////// */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444444;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-products {
+  padding: 80px 0 54px;
+}
+
+.section-products .header {
+  margin-bottom: 50px;
+}
+
+.section-products .header h3 {
+  font-size: 1rem;
+  color: #fe302f;
+  font-weight: 500;
+}
+
+.section-products .header h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #444444;
+}
+
+.section-products .single-product {
+  margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+  position: relative;
+  height: 290px;
+  max-height: 290px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+  transform: scale(1.2, 1.2) rotate(5deg);
+}
+
+.section-products .single-product .part-1 .discount,
+.section-products .single-product .part-1 .new {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #ffffff;
+  background-color: #fe302f;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.section-products .single-product .part-1 .new {
+  left: 0;
+  background-color: #444444;
+}
+
+.section-products .single-product .part-1 ul {
+  position: absolute;
+  bottom: -41px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+  bottom: 30px;
+  opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+  transition: color 0.2s;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+  color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+  font-size: 1rem;
+}
+
+.section-products .single-product .part-2 h4 {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.section-products .single-product .part-2 .product-old-price {
+  position: relative;
+  padding: 0 7px;
+  margin-right: 2px;
+  opacity: 0.6;
+}
+
+.section-products .single-product .part-2 .product-old-price::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #444444;
+  transform: translateY(-50%);
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+.product-section {
+  /* background-color: aqua; */
+  height: 70vh;
+}
+
+.product-title {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-title h2 {
+  font-size: 5em;
+  color: #cf4520;
+}
+
+.product-details .product-property1,
+.product-details .product-property2,
+.product-details .product-property3,
+.product-details .product-property4 {
+  width: 50%;
+  float: left;
+  /* background-color: #e5ded4; */
+  padding: 20px;
+}
+
+.prodct-card {
+  border: 2px solid gray;
+  border-radius: 25px;
+  margin: 0 20px;
+}
+
+.prodct-card img {
+  width: 100%;
+  margin: 5px;
+}
+
+#product-title {
+  font-weight: 800;
+}
+
+.price {
+  display: flex;
+  justify-content: space-around;
+}
+
+.price p:nth-child(1) {
+  text-decoration: line-through;
+}
+
+.price p:nth-child(2) {
+  color: green;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons button {
+  margin: 5px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  font-weight: 500;
+  transition: all 300ms;
+}
+
+.buttons button:nth-child(1) {
+  background-color: #e5ded4;
+  color: #000;
+}
+.buttons button:nth-child(1):hover {
+  background-color: #fff;
+  color: gray;
+  border: 2px solid gray;
+}
+
+.buttons button:nth-child(2) {
+  background-color: #cf4520;
+  color: #fff;
+}
+.buttons button:nth-child(2):hover {
+  background-color: #fff;
+  color: #cf4520;
+  border: 2px solid #cf4520;
+}
+
+/* .prodct-card:nth-last-child(1) {
+  border-radius: 50%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e5ded4;
+  cursor: pointer;
+  border: none;
+  transition: all 500ms;
+} */
+
+.products-row {
+  display: flex;
+  align-items: center;
+}
+
+.fa-chevron-right {
+  font-size: 30px;
+}
+
+/* .prodct-card:nth-last-child(1):hover {
+  background-color: #cf4520;
+  color: #fff;
+} */
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+
+/* PRODUCT SECTION END */
+
+/* FOOTER START */
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+.footer {
+  background-color: gray;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-part {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: center; */
+  margin: 50px;
+  color: #fff;
+}
+
+.footer-part h2 {
+  margin: 30px;
+}
+
+.copyright {
+  background-color: #9a9fad;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+/* FOOTER END */
